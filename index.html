@@ -224,20 +224,14 @@
         </ul>
       </section>
 
-      <!-- Contact -->
-      <section id="contact" class="section contact-block">
-        <h2 class="section-title">Contact</h2>
-        <p><strong>Email:</strong> <a href="mailto:ghulamhaider40@gmail.com">ghulamhaider40@gmail.com</a></p>
-        <p><strong>Phone:</strong> 0309 0275960</p>
-        <p><strong>Location:</strong> Lahore, Pakistan</p>
-        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ghulam-haider-419b211a1" target="_blank">linkedin.com/in/ghulam-haider-419b211a1</a></p>
-      </section>
-
-      <div class="footer">&copy; 2025 — Ghulam Haider — Senior Application & Web Developer</div>
+      <div class="footer">
+    &copy; <span id="year"></span> — <span>Ghulam Haider</span> — Senior Application & Web Developer
+  </div>
     </article>
   </div>
 
   <script>
+     document.getElementById("year").textContent = new Date().getFullYear();
     document.querySelectorAll('.nav-links a').forEach(a=>{
       a.addEventListener('click',function(e){
         e.preventDefault();
